@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Sign Up</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Sign Up</h1>
+    </header>
+    <section class="signup-section">
+      <!-- Admin sign-up form -->
+      <form id="signupForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <label for="adminKey">Admin Key:</label>
+        <input type="password" id="adminKey" name="adminKey" required />
+        <button type="submit">Sign Up</button>
+      </form>
+      <p>Already have an account? <a href="login_admin.html">Sign In</a></p>
+      <p><a href="index.html">Back to Home</a></p>
+    </section>
+    <footer>
+      <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Replace the below code with your actual sign-up logic
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          const adminKey = document.getElementById("adminKey").value;
+
+          // Example of basic sign-up validation and redirection (replace with your backend logic)
+          if (email && password && adminKey === "require") {
+            alert("Admin sign-up successful!");
+            window.location.href = "login_admin.html"; // Redirect to admin login page
+          } else {
+            alert("Invalid admin key or missing fields.");
+          }
+        });
+    </script>
+  </body>
+</html>

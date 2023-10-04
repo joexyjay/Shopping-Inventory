@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span id="adminName">Admin</span>!</h1>
+        <a href="index.html" id="logoutLink">Log Out</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="admin_dashboard.html">Dashboard</a></li>
+            <li><a href="create_product.html">Create a New Product</a></li>
+            <li><a href="update_product.html">Update Product</a></li>
+            <li><a href="delete_product.html">Delete Product</a></li>
+            <li><a href="endorse_salesman.html">Endorse a Salesman</a></li>
+            <li><a href="check_inventory.html">Check Inventory</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+    <section class="dashboard-content">
+        <h2>Admin Dashboard</h2>
+        <div id="functionContent">
+
+            <!-- Content will be loaded dynamically here -->
+        </div>
+    </section>
+    <footer>
+        <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+// Simulate getting the admin's name (replace with actual code)
+const adminName = "John";
+
+// Update the admin's name in the header
+document.getElementById("adminName").textContent = adminName;
+
+        const createProductLink = document.getElementById("createProductLink");
+        const endorseSalesmanLink = document.getElementById("endorseSalesmanLink");
+        const checkInventoryLink = document.getElementById("checkInventoryLink");
+        const functionContent = document.getElementById("functionContent");
+
+        createProductLink.addEventListener("click", function() {
+            functionContent.innerHTML = `
+                <h3>Create a New Product</h3>
+                <form>
+                    <label>Product Name: <input type="text" name="productName"></label><br>
+                    <label>Description: <textarea name="description"></textarea></label><br>
+                    <label>Quantity: <input type="number" name="quantity"></label><br>
+                    <button>Create</button>
+                </form>
+            `;
+        });
+
+        endorseSalesmanLink.addEventListener("click", function() {
+            functionContent.innerHTML = "<h3>Endorse a Salesman</h3><form><label>Salesman Name: <input type='text'></label><button>Endorse</button></form>";
+        });
+
+        checkInventoryLink.addEventListener("click", function() {
+            functionContent.innerHTML = "<h3>Check Inventory</h3><p>Current inventory levels:</p><ul><li>Product A: 50 units</li><li>Product B: 30 units</li></ul>";
+        });
+    </script>
+</body>
+</html>

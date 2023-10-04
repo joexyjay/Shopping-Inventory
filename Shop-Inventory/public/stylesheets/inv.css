@@ -1,0 +1,13 @@
+.beData{
+    width: 380px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.beData ul{
+    list-style-type: none;
+}
+.beData ul li{
+    border: 1px solid #05294e;
+    margin: 10px auto;
+    padding: 10px;
+}

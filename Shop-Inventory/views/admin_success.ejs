@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mode ShopInv</title>
+    <link rel='stylesheet' href='/stylesheets/base.css' />
+  </head>
+  <body>
+
+    <header class="flexit">
+      <h1>Decagon ShopInv</h1>
+      <form action="/" method="POST">
+        <button type="submit">logout</button>
+      </form>
+    </header>
+    <div class="wrap">
+      <div class="midBox">
+        <h3>Done</h3>
+        <p><%= message %></p>
+        <div class="beData">
+          <%= data %>
+        </div>
+        
+      </div>
+      <br><br>
+  
+      <div class="midBox add return">
+          <a href="/admin/dashboard">Back to dashboard</a>
+      </div>
+
+    </div>
+
+    <footer>
+      <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Update Product</h1>
+        <a href="index.html" id="logoutLink">Log Out</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="admin_dashboard.html">Dashboard</a></li>
+            <li><a href="create_product.html">Create a New Product</a></li>
+            <li><a href="update_product.html">Update Product</a></li>
+            <li><a href="delete_product.html">Delete Product</a></li>
+            <li><a href="endorse_salesman.html">Endorse a Salesman</a></li>
+            <li><a href="check_inventory.html">Check Inventory</a></li>
+        </ul>
+    </nav>
+    <section class="dashboard-content">
+      <h2>Update Product</h2>
+      <form id="updateProductForm">
+          <label for="productId">Select Product:</label>
+          <select id="productId" name="productId">
+              <!-- Populate this dropdown with actual product options -->
+              <option value="1">Product 1</option>
+              <option value="2">Product 2</option>
+              <!-- Add more product options as needed -->
+          </select><br>
+          
+          <label for="productName">Product Name:</label>
+          <input type="text" id="productName" name="productName" required><br>
+          
+          <label for="price">Price:</label>
+          <input type="number" id="price" name="price" step="0.01" required><br>
+          
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea><br>
+          
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" required><br>
+          
+          <label for="category">Category:</label>
+          <select id="category" name="category">
+              <option value="light">Light</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+          </select><br>
+          
+          <button type="submit">Update</button>
+      </form>
+  </section>
+    <footer>
+        <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+        // ... Add your JavaScript logic for updating products ...
+    </script>
+</body>
+</html>

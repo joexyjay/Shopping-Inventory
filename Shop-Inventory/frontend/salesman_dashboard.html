@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesman Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span id="salesmanName">Salesman</span>!</h1>
+        <a href="index.html" id="logoutLink">Log Out</a>
+    </header>
+    <nav>
+        <ul>
+            <!-- <li><a href="salesman_dashboard.html">Dashboard</a></li> -->
+            <li><a href="update_sold_items.html">Update Sold Items</a></li>
+            <li><a href="check_sales_inventory.html">Check Inventory</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+    <section class="dashboard-content">
+        <h2>Salesman Dashboard</h2>
+        <div id="functionContent">
+
+            <!-- Content will be loaded dynamically here -->
+        </div>
+    </section>
+    <footer>
+        <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+        // Simulate getting the salesman's name (replace with actual code)
+        const salesmanName = "Michael";
+
+        // Update the salesman's name in the header
+        document.getElementById("salesmanName").textContent = salesmanName;
+
+        const updateSoldItemsLink = document.getElementById("updateSoldItemsLink");
+        const checkInventoryLink = document.getElementById("checkInventoryLink");
+        const functionContent = document.getElementById("functionContent");
+
+        updateSoldItemsLink.addEventListener("click", function() {
+            functionContent.innerHTML = `
+                <h3>Update Sold Items</h3>
+                <form>
+                    <label>Product Name: <input type="text" name="productName"></label><br>
+                    <label>Quantity Sold: <input type="number" name="quantitySold"></label><br>
+                    <button>Update</button>
+                </form>
+            `;
+        });
+
+        checkInventoryLink.addEventListener("click", function() {
+            functionContent.innerHTML = "<h3>Check Inventory</h3><p>Current inventory levels:</p><ul><li>Product A: 50 units</li><li>Product B: 30 units</li></ul>";
+        });
+    </script>
+</body>
+</html>

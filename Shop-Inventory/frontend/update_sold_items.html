@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Sold Items</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sold Items Update</h1>
+        <a href="salesman_dashboard.html" id="backLink">Back to Dashboard</a>
+    </header>
+    <section class="dashboard-content">
+        <h2>Update Sold Items</h2>
+        <form id="updateSoldItemsForm">
+            <label for="product">Select Product:</label>
+            <select id="product" name="product">
+                <option value="productA">Product A</option>
+                <option value="productB">Product B</option>
+                <!-- Add more products as needed -->
+            </select>
+            <label for="quantity">Quantity Sold:</label>
+            <input type="number" id="quantity" name="quantity" required />
+            <button type="submit">Update</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add your form submission logic here
+        document.getElementById("updateSoldItemsForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get selected product and quantity sold from the form
+            const selectedProduct = document.getElementById("product").value;
+            const quantitySold = document.getElementById("quantity").value;
+
+            // Add your logic to update the sold items for the selected product
+            // For example, you can send a request to the backend to update the inventory
+
+            // Provide feedback to the user (replace with your actual feedback mechanism)
+            alert(`Sold ${quantitySold} units of ${selectedProduct}. Inventory updated.`);
+        });
+
+        // Example event listener for back link
+        document.getElementById("backLink").addEventListener("click", function() {
+            // Add logic to navigate back to the dashboard
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Sales Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Sales Inventory Check</h1>
+        <a href="salesman_dashboard.html" id="backLink">Back to Dashboard</a>
+    </header>
+    <section class="dashboard-content">
+        <h2>Sales Inventory</h2>
+        <ul id="inventoryList">
+            <!-- Inventory items will be loaded here -->
+        </ul>
+    </section>
+    <footer>
+        <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+        // Simulate getting inventory data (replace with your actual data fetching logic)
+        const inventoryData = [
+            { product: "Product A", quantitySold: 10 },
+            { product: "Product B", quantitySold: 20 },
+            // Add more inventory data as needed
+        ];
+
+        // Populate the inventory list
+        const inventoryList = document.getElementById("inventoryList");
+        inventoryData.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `${item.product}: ${item.quantitySold} units sold`;
+            inventoryList.appendChild(listItem);
+        });
+
+        // Example event listener for back link
+        document.getElementById("backLink").addEventListener("click", function() {
+            // Add logic to navigate back to the dashboard
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #ffffff;
+  background-color: #00B7FF;
+  text-decoration: none;
+  padding: 8px 10px;
+}
+
+a:hover{
+  color: #000;
+  opacity: 0.7;
+}
+.flexit{
+  display: flex;
+}
+
+.midBox{
+  width: 360px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  border: 2px solid #000;
+}
+
+.logOptions a{
+  width: 120px;
+  text-align: center;
+  
+}
+.logOptions{
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: #00B7FF;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 400;
+  background-color: #00B7FF;
+  color: #fff;
+  padding: 10px 30px;
+  height: 60px;
+}
+.wrap{
+  width: 100%;
+  padding-top: 80px;
+  background-color: aliceblue;
+  min-height: 100vh;
+}
+.banner{
+  font-size: 1.5rem;
+  padding-left: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+.lander{
+  width: 100%;
+  justify-content: space-between;
+}
+.lander .opt{
+  width: 40%;
+  padding: 40px 10px;
+}
+.lander .logOptions{
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: left;
+}
+.lander .opt h3{
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+.lander .opt a{
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 8px;
+}
+

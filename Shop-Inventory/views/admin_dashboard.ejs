@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mode ShopInv</title>
+    <link rel='stylesheet' href='/stylesheets/base.css' />
+    <link rel="stylesheet" href="/stylesheets/adash.css">
+  </head>
+  <body>
+    <header class="flexit">
+        <h1>Decagon ShopInv</h1>
+        <form action="/" method="POST">
+          <button type="submit">logout</button>
+        </form>
+    </header>
+
+    <div class="wrap">
+
+
+        <p class="banner">Welcome Admin</p>
+        <br>
+    
+        <div class="midBox">
+            <form action="/admin/dashboard/product/stockup" method="POST">
+                <h3>Restock product</h3>
+                <br><br>
+                <div class="flexit">
+                    <label for="name">Product Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <br>
+                <div class="flexit">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" min="1" id="quantity" name="quantity" required>
+                </div>
+                <br><br>
+                <button type="submit">Add stock</button>
+            </form>
+        </div>
+        <br>
+        <form action="/admin/dashboard/staff/endorsed" method="POST" class="midBox">
+            <h3>Endorse Salesman</h3>
+            <br><br>
+            <div class="flexit">
+                <label for="staffEmail">Email</label>
+                <input type="text" id="staffEemail" name="email" required>
+            </div>
+            <br><br>
+            <button type="submit" class="extend">Endorse</button>
+        </form>
+        <br><br>
+        <div class="midBox add">
+            <h3>Other actions</h3>
+            <br><br>
+            <a href="/admin/dashboard/product/create">Add new Product</a>
+            <a href="/admin/dashboard/product/all">Check Inventory</a>
+        </div>
+    </div>
+    <footer>
+        <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    
+    
+  </body>
+</html>

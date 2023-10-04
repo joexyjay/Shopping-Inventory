@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: #ffffff;
+    background-color: #00B7FF;
+    text-decoration: none;
+    padding: 8px 10px;
+  }
+  
+  a:hover{
+    color: #000;
+    opacity: 0.7;
+  }
+  .flexit{
+    display: flex;
+  }
+  
+  .midBox{
+    width: 360px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #000;
+  }
+
+.logOptions a{
+    width: 120px;
+    text-align: center;
+    
+}
+.logOptions{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #00B7FF;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 400;
+    background-color: #00B7FF;
+    color: #fff;
+    padding: 10px 30px;
+    height: 60px;
+    justify-content: space-between;
+  }
+
+  .wrap{
+    width: 100%;
+    padding-top: 80px;
+    background-color: aliceblue;
+    min-height: 100vh;
+    padding-bottom: 50px;
+  }
+
+  .banner{
+    font-size: 1.5rem;
+    padding-left: 20px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  form{
+    font-size: 18px;
+  }
+  form > div{
+    width: 100%;
+    justify-self: space-between;
+  }
+  form > div label{
+    width: 30%
+  }
+  form button{
+    width: 80px;
+    padding: 6px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+
+  }
+  form button :hover{
+    background-color: #292828;
+  }
+
+form .userSgn{
+    width: 120px;
+}
+
+.add{
+    padding: 60px 25px;
+}
+input{
+    outline: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    padding: 6px 4px;
+    background-color: #fff;
+    width: 70%;
+    
+}
+input :focus{
+    outline: none;
+    border: none;
+}
+.add .logOptions{
+    width: 100%;
+    justify-content: space-between;
+}
+.return{
+    text-align: center;
+}
+.extend{
+    width: 160px;
+}
+.error{
+    color: #cf2b2b;
+  }
+

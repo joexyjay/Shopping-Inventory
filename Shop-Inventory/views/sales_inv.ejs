@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mode ShopInv | Inventory</title>
+    <link rel='stylesheet' href='/stylesheets/base.css' />
+    <link rel="stylesheet" href="/stylesheets/inv.css">
+  </head>
+  <body>
+
+    <header class="flexit">
+      <h1>Decagon ShopInv</h1>
+      <form action="/" method="POST">
+        <button type="submit">logout</button>
+      </form>
+    </header>
+
+    <div class="wrap">
+      <div class="beData">
+        <ul>
+            <% data.forEach(product => { %>
+                <li class="invItem">
+                    <p>Product ID: <%= product.id %></p>
+                    <p>Product Name: <%= product.name %></p>
+                    <p>Quantity: <%= product.quantity %></p>
+                    <p>Price: <%= product.price %></p>
+                </li>
+            <% }) %>
+        </ul>
+      </div>
+      <br><br>
+      <div class="midBox return add">
+        <a href="/users/dashboard">Back to dashboard</a>
+    </div>
+    </div>
+    
+    <footer>
+      <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+  </body>
+  
+  <script src="/javascripts/inv.js"></script>
+</html>

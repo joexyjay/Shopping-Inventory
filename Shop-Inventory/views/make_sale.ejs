@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mode ShopInv</title>
+    <link rel='stylesheet' href='/stylesheets/base.css' />
+  </head>
+  <body>
+    <header class="flexit">
+      <h1>Decagon ShopInv</h1>
+      <form action="/" method="POST">
+        <button type="submit">logout</button>
+      </form>
+    </header>
+    
+    <div class="wrap">
+      <p class="banner">Make Sale</p>
+      <br><br>
+      <div class="midBox">
+        <form action="/users/dashboard/sale" method="POST">
+            <h3>Details</h3>
+            <br><br>
+            <div class="flexit">
+                <label for="name">Product</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <br>
+            <div class="flexit">
+                <label for="quantity">Quantity</label>
+                <input type="number" min="1" id="quantity" name="quantity" required>
+            </div>
+            <br>
+            <button type="submit">Sell</button>
+        </form>
+      </div>
+      <br><br>
+      <div class="midBox return add">
+        <a href="/users/dashboard">Back to dashboard</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mode ShopInv</title>
+    <link rel='stylesheet' href='/stylesheets/base.css' />
+  </head>
+  <body>
+
+    <header class="flexit">
+      <h1>Decagon ShopInv</h1>
+    </header>
+
+
+    <div class="wrap">
+      <p class="banner">Welcome to Model ShopInv</p><br><br>
+      <form action="/users/signup" method="POST" class="midBox">
+        <h3>Register</h3>
+        <br><br>
+        <div class="flexit">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+        <br>
+        <div class="flexit">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        <div class="flexit">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br><br>
+        <button type="submit" class="btnCenter btnGreen userSgn">Sign Up</button>
+      </form>
+      <br><br>
+      <div class="midBox add">
+        <h3>Not a salesman? Existing salesman or admin?</h3>
+        <br><br>
+        <div class="flexit logOptions">
+          <a href="/">Home page</a>
+          <a href="/users">Login</a>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    
+  </body>
+</html>

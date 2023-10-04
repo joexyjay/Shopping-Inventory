@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endorse a Salesman</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Endorse a Salesman</h1>
+        <a href="index.html" id="logoutLink">Log Out</a>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="admin_dashboard.html">Dashboard</a></li>
+          <li><a href="create_product.html">Create a New Product</a></li>
+          <li><a href="update_product.html">Update Product</a></li>
+          <li><a href="delete_product.html">Delete Product</a></li>
+          <li><a href="endorse_salesman.html">Endorse a Salesman</a></li>
+          <li><a href="check_inventory.html">Check Inventory</a></li>
+        </ul>
+    </nav>
+    <section class="dashboard-content">
+        <h2>Endorse a Salesman</h2>
+        <form id="endorseSalesmanForm">
+            <label for="salesmanName">Salesman Name:</label>
+            <input type="text" id="salesmanName" name="salesmanName" required><br>
+
+            <button type="submit">Endorse</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("endorseSalesmanForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Replace with actual backend logic to handle form submission
+            const salesmanName = document.getElementById("salesmanName").value;
+
+            // Example: Log the endorsed salesman (replace with your backend processing)
+            console.log("Endorsed Salesman:", salesmanName);
+
+            // You can redirect or display a success message here
+        });
+    </script>
+</body>
+</html>

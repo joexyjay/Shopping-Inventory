@@ -1,0 +1,1 @@
+console.log('Javascript will be implemented in this folder')

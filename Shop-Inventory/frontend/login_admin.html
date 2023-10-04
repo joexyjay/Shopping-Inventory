@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Sign In</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin Sign In</h1>
+    </header>
+    <section class="login-section">
+      <!-- Admin sign-in form -->
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Sign In</button>
+      </form>
+      <p>Don't have an account? <a href="signup_admin.html">Sign Up</a></p>
+      <p><a href="index.html">Back to Home</a></p>
+    </section>
+
+    <footer>
+      <p>© 2023 Inventory Management System. All rights reserved.</p>
+    </footer>
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Replace the below code with your actual authentication logic
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          // Example of basic authentication validation (replace with your backend logic)
+          if (username === "admin" && password === "admin") {
+            window.location.href = "admin_dashboard.html"; // Redirect to admin dashboard
+          } else {
+            alert("Invalid credentials. Please try again.");
+          }
+        });
+    </script>
+  </body>
+</html>
